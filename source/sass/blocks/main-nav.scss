@@ -1,0 +1,31 @@
+.main-nav {
+  position: relative;
+  min-height: 63px;
+
+  @media (min-width:$desktop-width) {
+    max-width: 74%;
+  }
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+}
+
+.main-nav__list a {
+  color: #ffffff;
+}
+
+@media (max-width:$desktop-width) {
+  .main-nav--closed {
+    display: none;
+  }  
+}

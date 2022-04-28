@@ -1,0 +1,158 @@
+.advantages__header-wrapper {
+  padding: 0 20px;
+  padding-top: 46px;
+  margin-bottom: 35px;
+
+  @media (min-width:$tablet-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.advantages__action {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+
+  @media (min-width:$tablet-width) {
+    font-size: 40px;
+    line-height: auto;
+
+    & br:nth-child(-n+2) {
+      display: none;
+    }
+  }
+
+  @media (min-width:$desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.advantages__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  background-image: url('../img/bg-triangle-white.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+  &::after {
+    content: "";
+    background-image: url('../img/iphone-screen-mobile@2x.png');
+    background-size: cover;
+    width: 157px;
+    height: 277px;
+    align-self: center;        
+  }
+
+  @media (min-width:$tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    &::after {
+      background-image: url('../img/iphone-screen-3-tablet@2x.png');
+      width: 268px;
+      height: 482px;
+      align-self: baseline;
+    }
+  }
+}
+
+// Через &(SCSS)
+
+.advantages {
+
+  // .advantages__list
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  // .advantages__item
+
+  &__item {
+    text-align: center;
+  }
+
+  // .advantages__title
+
+  &__title {
+    color: #000000;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  // .advantages__text
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  @media (min-width:$tablet-width) {
+
+		&__list {
+		}
+
+		&__item {
+      text-align: left;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+		}
+
+		&__title {
+		}
+
+		&__text {
+		}
+  }
+}
+
+
+// .advantages__list {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   margin-top: 88px;
+// }
+
+// .advantages__item {
+//   text-align: center;
+//   margin-bottom: 43px;
+// }
+
+// .advantages__title {
+//   color: #000000;
+//   margin: 0;
+//   padding: 0;
+//   margin-bottom: 24px;
+// }
+
+// .advantages__text {
+//   font-size: 14px;
+//   line-height: 24px;
+//   margin: 0;
+// }
+
+// .advantages__img--outer {
+//   text-align: center;
+
+//   &::after {
+//     content: url('../img/iphone-screen-mobile@2x.png');
+//     width: 157px;
+//     height: 320px;
+//   }
+
+// }
