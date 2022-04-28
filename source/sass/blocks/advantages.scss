@@ -4,7 +4,16 @@
   margin-bottom: 35px;
 
   @media (min-width:$tablet-width) {
+    padding: 0 20px;
+    padding: 58px 20px 0 20px;
     margin-bottom: 42px;
+  }
+
+  @media (min-width:$desktop-width) {
+    max-width: 960px;
+    padding: 76px 10px 0 10px;
+    margin: 0 auto;
+    margin-bottom: 65px;
   }
 }
 
@@ -63,6 +72,14 @@
       align-self: flex-end;
     }
   }
+
+  @media (min-width:$desktop-width) {
+    padding: 0 10px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 // Через &(SCSS)
@@ -114,14 +131,52 @@
 		&__list {
       padding-top: 65px;
       margin-bottom: 40px;  
+      max-width: 960px;
+
 		}
 
 		&__item {
       text-align: left;
+      max-width: 310px;
 
       &:last-child {
         margin-bottom: 0;
       }
+		}
+
+    &__text {
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width:$desktop-width) {
+
+		&__list {
+      display: flex;
+      flex-wrap: wrap;
+		}
+
+		&__item {
+      max-width: 252px;
+      text-align: center;
+      margin-right: 68px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+		}
+
+		&__title {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 35px;
+		}
+
+		&__text {
+      font-size: 18px;
+      line-height: 30px;
 		}
   }
 }
