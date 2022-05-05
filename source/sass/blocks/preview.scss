@@ -1,0 +1,45 @@
+.preview {
+  @media (max-width:$mobile-width-only) {
+    display: none;
+  }
+}
+
+.preview {
+
+  // .preview__wrapper
+
+  &__wrapper {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .preview__container-svg
+
+  &__container-svg {
+  }
+
+  // .preview__content
+
+  &__content {
+    max-width: 310px;
+  }
+
+  // .preview__title
+
+  &__title {
+  }
+
+  // .preview__text
+
+  &__text {
+    & br {
+      display: none;
+    }
+  }
+
+  // .preview__link-all
+
+  &__link-all {
+  }
+}

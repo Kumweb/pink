@@ -36,11 +36,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 21px 20px;
-
-  @media (min-width:$tablet-width) {
-    padding: 43px 20px;
-  }
 
   @media (min-width:$desktop-width) {
     flex-direction: row;
@@ -83,6 +78,16 @@
 .page-header__menu {
   display: flex;
   justify-content: space-between;
+  padding: 21px 20px;
+
+  @media (min-width:$tablet-width) {
+    padding: 43px 20px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding: 0;
+  }
+
 }
 
 .page-header__toggle {
