@@ -549,13 +549,14 @@ img {
 @media (min-width: 650px) {
   .advantages__container {
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
   }
   .advantages__container::after {
     background-image: url("../img/iphone-screen-3-tablet@2x.png");
     width: 268px;
     height: 482px;
     align-self: flex-end;
+    margin-right: 42px;
   }
 }
 @media (min-width: 1200px) {
@@ -596,7 +597,6 @@ img {
 }
 @media (min-width: 650px) {
   .advantages__list {
-    padding-top: 5px;
     margin-bottom: 40px;
     max-width: 960px;
   }
@@ -687,13 +687,97 @@ img {
 
 .preview__wrapper {
   padding: 0 20px;
+  padding-top: 54px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .preview__wrapper {
+    background-color: #f2f2f2;
+  }
+}
+.preview__container-svg {
+  position: relative;
+  margin-right: 70px;
+}
+.preview__container-svg::before {
+  content: "24";
+  position: absolute;
+  top: 118px;
+  left: 64px;
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 63px;
+  color: #d22856;
+  z-index: 100;
+}
+@media (min-width: 1200px) {
+  .preview__container-svg::before {
+    top: 140px;
+    left: 76px;
+    font-size: 120px;
+    line-height: 93px;
+    color: #d22856;
+    z-index: 100;
+  }
+}
+.preview__svg {
+  width: 238px;
+  height: 276px;
+}
+@media (min-width: 1200px) {
+  .preview__svg {
+    width: 293px;
+    height: 345px;
+  }
 }
 .preview__content {
   max-width: 310px;
+  margin-top: 48px;
+}
+@media (min-width: 1200px) {
+  .preview__content {
+    max-width: 570px;
+  }
+}
+.preview__title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .preview__title {
+    margin-bottom: 37px;
+  }
+  .preview__title br {
+    display: none;
+  }
+}
+.preview__text {
+  margin: 24px 0 24px 0;
+  font-size: 14px;
+  line-height: 24px;
 }
 .preview__text br {
   display: none;
+}
+@media (min-width: 1200px) {
+  .preview__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
+}
+.preview__link-all {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+}
+@media (min-width: 1200px) {
+  .preview__link-all {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
