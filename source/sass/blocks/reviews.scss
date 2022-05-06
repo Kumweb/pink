@@ -1,0 +1,56 @@
+.reviews {
+
+  // .reviews__wrapper
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  // .reviews__list
+
+  &__list {
+  }
+
+  // .reviews__item
+
+  &__item {
+    margin: 0;
+  }
+
+  // .reviews__author
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .reviews__author-name
+
+  &__author-name {
+    margin: 0;
+  }
+
+  // .reviews__author-info
+
+  &__author-info {
+    margin: 0;
+  }
+
+  // .reviews__author-text
+
+  &__author-text {
+    margin: 0;
+  }
+}
+.slider {
+
+  // .slider__list
+
+  &__list {
+  }
+
+  // .slider__item
+
+  &__item {
+  }
+}

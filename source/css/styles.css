@@ -573,11 +573,11 @@ img {
   margin: 0;
   padding: 0;
   padding-top: 85px;
-  margin-bottom: 46px;
+  margin-bottom: 43px;
 }
 .advantages__item {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 }
 .advantages__item:last-child {
   margin-bottom: 0;
@@ -597,12 +597,12 @@ img {
 }
 @media (min-width: 650px) {
   .advantages__list {
-    margin-bottom: 40px;
     max-width: 960px;
   }
   .advantages__item {
     text-align: left;
     max-width: 310px;
+    margin-bottom: 47px;
   }
   .advantages__item:last-child {
     margin-bottom: 0;
@@ -617,10 +617,13 @@ img {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    padding-top: 0;
+    margin-bottom: 30px;
   }
   .advantages__item {
     max-width: 252px;
     text-align: center;
+    margin-bottom: 30px;
   }
   .advantages__item:nth-child(3n) {
     margin-right: 0px;
@@ -684,16 +687,24 @@ img {
     display: none;
   }
 }
+@media (min-width: 1200px) {
+  .preview {
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+}
 
 .preview__wrapper {
   padding: 0 20px;
-  padding-top: 54px;
   display: flex;
   justify-content: center;
+  padding-top: 54px;
 }
 @media (min-width: 1200px) {
   .preview__wrapper {
-    background-color: #f2f2f2;
+    padding-top: 17px;
+    margin-top: 0;
+    margin-bottom: 67px;
   }
 }
 .preview__container-svg {
@@ -733,11 +744,12 @@ img {
 }
 .preview__content {
   max-width: 310px;
-  margin-top: 48px;
+  margin-top: 36px;
 }
 @media (min-width: 1200px) {
   .preview__content {
     max-width: 570px;
+    margin-top: 98px;
   }
 }
 .preview__title {
@@ -748,15 +760,12 @@ img {
   margin: 0;
 }
 @media (min-width: 1200px) {
-  .preview__title {
-    margin-bottom: 37px;
-  }
   .preview__title br {
     display: none;
   }
 }
 .preview__text {
-  margin: 24px 0 24px 0;
+  margin: 15px 0 15px 0;
   font-size: 14px;
   line-height: 24px;
 }
@@ -767,7 +776,7 @@ img {
   .preview__text {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 47px;
+    margin: 25px 0 30px 0;
   }
 }
 .preview__link-all {
@@ -779,5 +788,25 @@ img {
   .preview__link-all {
     font-size: 18px;
   }
+}
+
+.reviews__wrapper {
+  padding: 0 20px;
+}
+.reviews__item {
+  margin: 0;
+}
+.reviews__author {
+  display: flex;
+  flex-direction: column;
+}
+.reviews__author-name {
+  margin: 0;
+}
+.reviews__author-info {
+  margin: 0;
+}
+.reviews__author-text {
+  margin: 0;
 }
 /*# sourceMappingURL=styles.css.map */
