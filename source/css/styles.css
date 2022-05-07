@@ -793,20 +793,76 @@ img {
 .reviews__wrapper {
   padding: 0 20px;
 }
+.reviews__list {
+  padding-top: 50px;
+}
 .reviews__item {
   margin: 0;
+  text-align: center;
 }
 .reviews__author {
   display: flex;
   flex-direction: column;
 }
+.reviews__author br {
+  display: none;
+}
 .reviews__author-name {
+  font-weight: bold;
+  font-style: normal;
+  line-height: 30px;
+  color: #000000;
   margin: 0;
+  margin-bottom: 25px;
 }
 .reviews__author-info {
   margin: 0;
 }
+@media (max-width: 649px) {
+  .reviews__author-info {
+    display: none;
+  }
+}
 .reviews__author-text {
+  font-size: 14px;
+  line-height: 30px;
   margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .reviews__prev {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .reviews__next {
+    display: none;
+  }
+}
+
+.slider__toggles {
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  margin: 0;
+}
+.slider__toggle {
+  padding: 0;
+  margin-right: 17px;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(40, 54, 69, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__toggle:last-child {
+  margin-right: 0;
+}
+.slider__toggle--current {
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  border: 3px solid #283645;
 }
 /*# sourceMappingURL=styles.css.map */
