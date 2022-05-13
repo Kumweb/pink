@@ -49,8 +49,8 @@
   display: none;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  color: #283645;
+  background: inherit;
   opacity: 0.5;
   user-select: none;
 }
@@ -59,11 +59,22 @@
   display: flex;
 }
 
-.slider__control:hover,
-.slider__control:focus {
-  color: #fff;
+.slider__control:hover {
+  color: #283645;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+.slider__control:focus {
+  color: #283645;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.slider__control:active {
+  color: #283645;
+  text-decoration: none;
+  opacity: 0.1;
 }
 
 .slider__control--prev {
@@ -85,18 +96,18 @@
 .slider__control::before {
   content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 41px;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
 
 .slider__control--prev::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("../img/icon-review-arrow-left.svg");
 }
 
 .slider__control--next::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("../img/icon-review-arrow-right.svg");
 }
 
 /* Индикаторы */
@@ -125,6 +136,10 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  
+  @media (min-width:$desktop-width) {
+    display: none;
+  }
 
   &:last-child {
     margin-right: 0;
