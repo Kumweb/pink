@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* open-sans-300 - latin_cyrillic */
 @font-face {
   font-family: "Open Sans";
@@ -791,10 +792,7 @@ img {
 }
 
 .reviews__wrapper {
-  padding: 0 20px;
-}
-.reviews__list {
-  padding-top: 50px;
+  padding: 44px 20px 0 20px;
 }
 .reviews__item {
   margin: 0;
@@ -813,7 +811,7 @@ img {
   line-height: 30px;
   color: #000000;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 .reviews__author-info {
   margin: 0;
@@ -862,6 +860,150 @@ img {
 .slider__toggle--current {
   width: 11px;
   height: 11px;
+  background-color: #ffffff;
+  border: 3px solid #283645;
+}
+
+/**
+  * SimpleAdaptiveSlider by Itchief v2.0.0 (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
+  * Copyright 2020 - 2021 Alexander Maltsev
+  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+  */
+/* стили для корневого элемента слайдера */
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* стили для wrapper */
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: inherit;
+  padding-bottom: 36px;
+}
+
+/* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* класс для отключения transition */
+.transition-none {
+  transition: none;
+}
+
+/* стили для элементов */
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+/* кнопки Prev и Next */
+.slider__control {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 50px;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.slider__control--show {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.slider__control--prev {
+  left: 0;
+}
+@media (max-width: 1200px) {
+  .slider__control--prev {
+    display: none;
+  }
+}
+
+.slider__control--next {
+  right: 0;
+}
+@media (max-width: 1200px) {
+  .slider__control--next {
+    display: none;
+  }
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control--prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control--next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* Индикаторы */
+.slider__indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.slider__indicator {
+  flex: 0 1 auto;
+  align-self: center;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-color: rgba(40, 54, 69, 0.3);
+  background-clip: padding-box;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider__indicator:last-child {
+  margin-right: 0;
+}
+
+.slider__indicator--active {
+  width: 6px;
+  height: 6px;
   background-color: #ffffff;
   border: 3px solid #283645;
 }
