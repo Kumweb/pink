@@ -3,13 +3,24 @@
   // .reviews__wrapper
 
   &__wrapper {
+    position: relative;
     padding: 44px 20px 0 20px;
+
+    @media (min-width:$tablet-width) {
+      padding-top: 109px;
+    }
+
+    @media (min-width:$desktop-width) {
+      padding: 72px 10px 0 10px;
+    }
+
   }
 
   // .reviews__list
 
-  &__list {
-  }
+  // &__list {
+
+  // }
 
   // .reviews__item
 
@@ -24,113 +35,84 @@
     display: flex;
     flex-direction: column;
 
+    @media (min-width:$tablet-width) {
+      flex-direction: column-reverse;
+    }
+
     & br {
       display: none;
     }
   }
 
+  // .reviews__author-info
+
+  &__author-info {
+    margin-bottom: 23px;
+  }
+
   // .reviews__author-name
 
   &__author-name {
+    display: inline-flex;
     font-weight: bold;
     font-style: normal;
     line-height: 30px;
     color: #000000;
     margin: 0;
-    margin-bottom: 23px;
+
+    @media (min-width:$tablet-width) {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width:$desktop-width) {
+      font-size: 24px;
+    }
   }
 
   // .reviews__author-info
 
-  &__author-info {
+  &__author-age {
+    font-size: 14px;
     margin: 0;
 
     @media (max-width:$mobile-width-only) {
       display: none;
+    }
+
+    @media (min-width:$desktop-width) {
+      font-size: 18px;
     }
   }
 
   // .reviews__author-text
 
   &__author-text {
+    align-self: center;
     font-size: 14px;
     line-height: 30px;
+    max-width: 700px;
     margin: 0;
-  }
-}
 
-// Buton left right
-
-.reviews {
-
-  // .reviews__prev
-
-  &__prev {
-
-
-    @media (max-width:$desktop-width) {
-      display: none;
+    @media (min-width:$tablet-width) {
+      font-size: 18px;
+      margin-bottom: 44px;
     }
-  }
 
-  // .reviews__next
-
-  &__next {
-
-
-    @media (max-width:$desktop-width) {
-      display: none;
+    @media (min-width:$desktop-width) {
+      &::before {
+        display: block;
+        content: '';
+        margin: 0 auto;
+        margin-bottom: 55px;
+        width: 79px;
+        height: 63px;
+        background-color: #efefef;
+        mask-image: url("../img/icon-quotes.svg");
+        // content: url("../img/icon-quotes.svg");
+        // width: 79px;
+        // height: 63px;
+      }
     }
   }
 }
-
-.slider {
-
-  // .slider__list
-
-  &__list {
-
-  }
-
-  // .slider__item
-
-  &__item {
-
-  }
-
-  // .slider__toggles
-
-  &__toggles {
-    font-size: 0;
-    line-height: 0;
-    text-align: center;
-    margin: 0;
-    
-  }
-
-  // .slider__toggle
-
-  &__toggle {
-    padding: 0;
-    margin-right: 17px;
-    width: 6px;
-    height: 6px;
-    background-color: rgba($lightblack, 30%);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &--current {
-      width: 11px;
-      height: 11px;
-      background-color: #ffffff;
-      border: 3px solid $lightblack;
-    }
-  }
-}
-
-
