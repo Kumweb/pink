@@ -506,8 +506,15 @@
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // инициализация слайдера
-  new ItcSimpleSlider('.slider', {
+  // инициализация 1 слайдера с нужными настройками
+  new ItcSimpleSlider('.reviews__slider', {
+    loop: true,
+    autoplay: false,
+    interval: 5000,
+    swipe: true,
+  });
+  // инициализация 2 слайдера с нужными настройками
+  new ItcSimpleSlider('.price__slider', {
     loop: true,
     autoplay: false,
     interval: 5000,
