@@ -185,7 +185,7 @@
       <h2 class="visually-hidden">Отзывы о нас</h2>
       <div class="reviews__wrapper">
         <!-- Разметка слайдера (html код) -->        
-        <div class="slider">
+        <div class="reviews__slider slider">
           <div class="slider__wrapper">
             <div class="reviews__list slider__items">
               <blockquote class="reviews__item slider__item">
@@ -251,86 +251,69 @@
     <section class="price">
       <h2 class="visually-hidden">Цены на приложение «Pink»</h2>
 
-      <div class="price__wrapper slider">
-        <table class="price__table table">
-          <div class="table__list slider__list">
-            <div class="table__item slider__item">
-              <tr>
-                <th class="table__title">
-                  База<br>
-                  <span class="table__price">1,99 USD</span>
-                </th>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Розовый фильтр</span> img
-                </td>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Смайлики</span> img
-                </td>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Комментарии</span> img
-                </td>
-              </tr>
-            </div>
-            <div class="table__item slider__item">
-              <tr>
-                <th class="table__title">
-                  Стандарт<br>
-                  <span class="table__price">3,99 USD</span>
-                </th>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Розовый фильтр</span> img
-                </td>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Смайлики</span> img
-                </td>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Комментарии</span> img
-                </td>
-              </tr>
-            </div>
-            <div class="table__item slider__item">
-              <tr>
-                <th class="table__title">
-                  Анлим<br>
-                  <span class="table__price">9,99 USD</span>
-                </th>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Розовый фильтр</span> img
-                </td>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Смайлики</span> img
-                </td>
-              </tr>
-              <tr class="table__info">
-                <td>
-                  <span class="table__text">Комментарии</span> img
-                </td>
-              </tr>
-            </div>
-          </div>
-        </table>
-        <p class="price__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
-      </div>
+      <table class="price__table table">
+        <caption class="visually-hidden">Тарифы на приложение</caption>
+
+        <colgroup class="table__col-list">
+          <col class="table-col-item table-col-item--no-visible">
+          <col class="table-col-item">
+          <col class="table-col-item">
+          <col class="table-col-item">
+        </colgroup>
+
+        <tr class="table__row-title">
+          <th class="table__cell-price table__cell-price--no-visible">&nbsp;</th>
+          <th class="table__cell-price">
+            База<br>
+            <span class="table__price">1,99 USD</span>
+          </th>
+          <th class="table__cell-price">
+            Стандарт<br>
+            <span class="table__price">3,99 USD</span>
+          </th>
+          <th class="table__cell-price">
+            Анлим<br>
+            <span class="table__price">9,99 USD</span>
+          </th>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell">Розовый фильтр</td>
+          <td class="table__cell-yes">
+            <span class="table__cell-text">Розовый фильтр</span>
+          </td>
+          <td class="table__cell-yes">
+            <span class="table__cell-text">Розовый фильтр</span>
+          </td>
+          <td class="table__cell-yes">
+            <span class="table__cell-text">Розовый фильтр</span>
+          </td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell">Смайлики</td>
+          <td class="table__cell-no">
+            <span class="table__cell-text">Смайлики</span>
+          </td>
+          <td class="table__cell-yes">
+            <span class="table__cell-text">Смайлики</span>
+          </td>
+          <td class="table__cell-yes">
+            <span class="table__cell-text">Смайлики</span>
+          </td>
+        </tr>
+        <tr class="table__row">
+          <td class="table__cell">Комментарии</td>
+          <td class="table__cell-no">
+            <span class="table__cell-text">Комментарии</span>
+          </td>
+          <td class="table__cell-no">
+            <span class="table__cell-text">Комментарии</span>
+          </td>
+          <td class="table__cell-yes">
+            <span class="table__cell-text">Комментарии</span>
+          </td>
+        </tr>
+      </table>
+
         <!-- Целая таблица? или с mobile first начинать???
         <table class="price__table table">
           <div class="table__list slider__list">
