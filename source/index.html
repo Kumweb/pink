@@ -248,10 +248,93 @@
       </div>
     </section>
 
+    
     <section class="price">
       <h2 class="visually-hidden">Цены на приложение «Pink»</h2>
 
-      <table class="price__table table">
+      <div class="price__wrapper">
+        <div class="price__items">
+          <input class="price__switch" type="radio" name="price" id="price-radio-1">
+          <input class="price__switch" type="radio" name="price" id="price-radio-2" checked>
+          <input class="price__switch" type="radio" name="price" id="price-radio-3">
+          <table class="price__list table">
+            <caption class="visually-hidden">Тарифы на приложение</caption>
+
+            <!-- <colgroup class="price__col-list">
+              <col class="price-col-item price__col-item--no-visible">
+              <col class="price-col-item">
+              <col class="price-col-item">
+              <col class="price-col-item">
+            </colgroup> -->
+
+            <thead class="price__list-head">
+              <tr>
+                <th class="price__value price__value--empty price__value--none">&nbsp;</th>
+                <th class="price__value">
+                  База<br>
+                  <span class="price__value-sum">1,99 USD</span>
+                </th>
+                <th class="price__value price__value--flag">
+                  Стандарт<br>
+                  <span class="price__value-sum">3,99 USD</span>
+                  <svg class="price__value-hit" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74px" height="73px" viewBox="0 0 74 73" enable-background="new 0 0 74 73" xml:space="preserve">
+                    <polygon fill="#D22856" points="31,0 0,30.581 0,73 74,0 "/>
+                  </svg>                  
+                </th>
+                <th class="price__value">
+                  Анлим<br>
+                  <span class="price__value-sum">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="price__list-body">
+              <tr class="price__row">
+                <td class="price__cell price__cell--none">Розовый фильтр</td>
+                <td class="price__cell price__cell--yes">
+                  <span class="price__cell-text">Розовый фильтр</span>
+                </td>
+                <td class="price__cell price__cell--yes">
+                  <span class="price__cell-text">Розовый фильтр</span>
+                </td>
+                <td class="price__cell price__cell--yes">
+                  <span class="price__cell-text">Розовый фильтр</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell price__cell--none">Смайлики</td>
+                <td class="price__cell price__cell--no">
+                  <span class="price__cell-text">Смайлики</span>
+                </td>
+                <td class="price__cell price__cell--yes">
+                  <span class="price__cell-text">Смайлики</span>
+                </td>
+                <td class="price__cell price__cell--yes">
+                  <span class="price__cell-text">Смайлики</span>
+                </td>
+              </tr>
+              <tr class="price__row">
+                <td class="price__cell price__cell--none">Комментарии</td>
+                <td class="price__cell price__cell--no">
+                  <span class="price__cell-text">Комментарии</span>
+                </td>
+                <td class="price__cell price__cell--no">
+                  <span class="price__cell-text">Комментарии</span>
+                </td>
+                <td class="price__cell price__cell--yes">
+                  <span class="price__cell-text">Комментарии</span>
+                </td>
+              </tr>
+            </tbody>
+
+          </table>
+          <div class="price__nav slider__indicators">
+            <label class="slider__indicator price__nav-btn" for="price-radio-1"></label>
+            <label class="slider__indicator price__nav-btn" for="price-radio-2"></label>
+            <label class="slider__indicator price__nav-btn" for="price-radio-3"></label>
+          </div>
+        </div>
+
+      <!-- <table class="price__list table">
         <caption class="visually-hidden">Тарифы на приложение</caption>
 
         <colgroup class="table__col-list">
@@ -312,7 +395,7 @@
             <span class="table__cell-text">Комментарии</span>
           </td>
         </tr>
-      </table>
+      </table> -->
 
         <!-- Целая таблица? или с mobile first начинать???
         <table class="price__table table">
