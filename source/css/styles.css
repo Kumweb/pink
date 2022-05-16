@@ -330,7 +330,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 75px;
-    padding: 0px 20px 120px 20px;
+    padding-top: 120px;
     min-width: 650px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
@@ -791,6 +791,9 @@ img {
   }
 }
 
+.reviews {
+  margin-bottom: 40px;
+}
 .reviews__wrapper {
   position: relative;
   padding: 44px 20px 0 20px;
@@ -1042,5 +1045,229 @@ img {
   height: 6px;
   background-color: #ffffff;
   border: 3px solid #283645;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.price {
+  padding-top: 100px;
+  background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.price__wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.price__items {
+  margin-bottom: 50px;
+}
+.price__switch {
+  display: none;
+}
+.price__list {
+  margin-bottom: 45px;
+  width: 828px;
+  box-sizing: border-box;
+  transform: translateX(-276px);
+}
+.price__list-head {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645;
+  border-radius: 5px;
+}
+.price__value {
+  position: relative;
+  box-sizing: border-box;
+  min-width: 276px;
+  padding-top: 13px;
+  padding-bottom: 23px;
+  border-left: 2px solid #f2f2f2;
+}
+.price__value:nth-child(2) {
+  border-left: none;
+  border-top-left-radius: 5px;
+}
+.price__value:last-child {
+  border-top-right-radius: 5px;
+}
+.price__value--empty {
+  visibility: collapse;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: 0;
+}
+.price__value-hit {
+  display: block;
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  top: 0;
+}
+.price__value--flag::before {
+  position: absolute;
+  content: "хит";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  width: 74px;
+  height: 74px;
+  left: 0;
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+.price__value-sum {
+  font-size: 18px;
+  font-weight: 300;
+}
+.price__list-body {
+  background-color: #ffffff;
+}
+.price__cell {
+  position: relative;
+  box-sizing: border-box;
+  padding: 14px 19px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid #f2f2f2;
+  border-top: none;
+}
+.price__cell--yes::after {
+  display: block;
+  float: right;
+  content: "";
+  width: 31px;
+  height: 21px;
+  margin-top: 5px;
+  -webkit-mask-image: url("../img/icon-yes.svg");
+          mask-image: url("../img/icon-yes.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: #3dc644;
+}
+.price__cell--no::after {
+  display: block;
+  float: right;
+  content: "";
+  width: 27px;
+  height: 25px;
+  margin-top: 5px;
+  -webkit-mask-image: url("../img/icon-no.svg");
+          mask-image: url("../img/icon-no.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: #f25b26;
+}
+.price .price__nav {
+  position: static;
+}
+
+@media (max-width: 649px) {
+  .price__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price__cell--none {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .price__nav {
+    position: static;
+  }
+
+  #price-radio-1:checked ~ .price__list {
+    transform: translateX(280px);
+    transition: 0.5s;
+  }
+
+  #price-radio-2:checked ~ .price__list {
+    transform: translateX(0px);
+    transition: 0.5s;
+  }
+
+  #price-radio-3:checked ~ .price__list {
+    transform: translateX(-280px);
+    transition: 0.5s;
+  }
+
+  #price-radio-1:checked ~ .price__nav label[for=price-radio-1],
+#price-radio-2:checked ~ .price__nav label[for=price-radio-2],
+#price-radio-3:checked ~ .price__nav label[for=price-radio-3] {
+    background-color: white;
+    border: 3px solid #283645;
+  }
+}
+@media (min-width: 650px) {
+  .price__items {
+    padding: 0 20px;
+    margin-bottom: 70px;
+  }
+  .price__list {
+    transform: none;
+    width: 620px;
+    margin: 0 auto;
+  }
+  .price__value {
+    min-width: 152px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
+  .price__value:first-child, .price__value-hit {
+    width: 60px;
+    height: 60px;
+  }
+  .price__value--flag::before {
+    left: 0;
+    top: 0;
+  }
+  .price__cell {
+    padding: 5px 0 5px 0;
+  }
+  .price__cell--yes, .price__cell--no {
+    text-align: center;
+  }
+  .price__cell--yes::after, .price__cell--no::after {
+    display: inline-block;
+    float: none;
+  }
+  .price__cell--none {
+    text-transform: none;
+    padding-left: 16px;
+    padding-right: 18px;
+  }
+  .price__cell-text {
+    display: none;
+  }
+  .price .price__nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
