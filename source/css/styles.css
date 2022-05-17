@@ -1088,7 +1088,7 @@ img {
   min-width: 276px;
   padding-top: 13px;
   padding-bottom: 23px;
-  border-left: 2px solid #f2f2f2;
+  border-left: 2px solid transparent;
 }
 .price__value:nth-child(2) {
   border-left: none;
@@ -1240,7 +1240,10 @@ img {
     padding-top: 12px;
     padding-bottom: 7px;
   }
-  .price__value:first-child, .price__value-hit {
+  .price__value-sum {
+    font-size: 24px;
+  }
+  .price__value-hit {
     width: 60px;
     height: 60px;
   }
@@ -1250,6 +1253,54 @@ img {
   }
   .price__cell {
     padding: 5px 0 5px 0;
+  }
+  .price__cell--yes, .price__cell--no {
+    text-align: center;
+  }
+  .price__cell--yes::after, .price__cell--no::after {
+    display: inline-block;
+    float: none;
+  }
+  .price__cell--none {
+    text-transform: none;
+    padding-left: 16px;
+    padding-right: 18px;
+  }
+  .price__cell-text {
+    display: none;
+  }
+  .price .price__nav {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .price {
+    padding-top: 160px;
+  }
+  .price__items {
+    padding: 0 10px;
+    margin-bottom: 100px;
+  }
+  .price__list {
+    transform: none;
+    width: 940px;
+    margin: 0 auto;
+  }
+  .price__value {
+    min-width: 233px;
+    padding-top: 17px;
+    padding-bottom: 22px;
+  }
+  .price__value:first-child, .price__value-hit {
+    width: 74px;
+    height: 74px;
+  }
+  .price__value--flag::before {
+    left: 5px;
+    top: 5px;
+  }
+  .price__cell {
+    padding: 11px 0 11px 0;
   }
   .price__cell--yes, .price__cell--no {
     text-align: center;
