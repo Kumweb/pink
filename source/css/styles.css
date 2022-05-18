@@ -1321,4 +1321,60 @@ img {
     display: none;
   }
 }
+.contacts {
+  text-align: center;
+  padding-top: 45px;
+}
+.contacts__wrapper {
+  padding: 0 20px;
+}
+.contacts__communicate {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 120%;
+}
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contacts__item {
+  margin-bottom: 25px;
+}
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+.contacts__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.contacts__info {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 137%;
+  color: #d22856;
+}
+
+.contacts__map-container {
+  position: relative;
+  max-width: 1200px;
+  min-width: 320px;
+}
+.contacts__bg-triangle {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+.contacts__map {
+  width: 100%;
+}
 /*# sourceMappingURL=styles.css.map */

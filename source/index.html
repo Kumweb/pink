@@ -333,109 +333,6 @@
             <label class="slider__indicator price__nav-btn" for="price-radio-3"></label>
           </div>
         </div>
-
-      <!-- <table class="price__list table">
-        <caption class="visually-hidden">Тарифы на приложение</caption>
-
-        <colgroup class="table__col-list">
-          <col class="table-col-item table-col-item--no-visible">
-          <col class="table-col-item">
-          <col class="table-col-item">
-          <col class="table-col-item">
-        </colgroup>
-
-        <tr class="table__row-title">
-          <th class="table__cell-price table__cell-price--no-visible">&nbsp;</th>
-          <th class="table__cell-price">
-            База<br>
-            <span class="table__price">1,99 USD</span>
-          </th>
-          <th class="table__cell-price">
-            Стандарт<br>
-            <span class="table__price">3,99 USD</span>
-          </th>
-          <th class="table__cell-price">
-            Анлим<br>
-            <span class="table__price">9,99 USD</span>
-          </th>
-        </tr>
-        <tr class="table__row">
-          <td class="table__cell">Розовый фильтр</td>
-          <td class="table__cell-yes">
-            <span class="table__cell-text">Розовый фильтр</span>
-          </td>
-          <td class="table__cell-yes">
-            <span class="table__cell-text">Розовый фильтр</span>
-          </td>
-          <td class="table__cell-yes">
-            <span class="table__cell-text">Розовый фильтр</span>
-          </td>
-        </tr>
-        <tr class="table__row">
-          <td class="table__cell">Смайлики</td>
-          <td class="table__cell-no">
-            <span class="table__cell-text">Смайлики</span>
-          </td>
-          <td class="table__cell-yes">
-            <span class="table__cell-text">Смайлики</span>
-          </td>
-          <td class="table__cell-yes">
-            <span class="table__cell-text">Смайлики</span>
-          </td>
-        </tr>
-        <tr class="table__row">
-          <td class="table__cell">Комментарии</td>
-          <td class="table__cell-no">
-            <span class="table__cell-text">Комментарии</span>
-          </td>
-          <td class="table__cell-no">
-            <span class="table__cell-text">Комментарии</span>
-          </td>
-          <td class="table__cell-yes">
-            <span class="table__cell-text">Комментарии</span>
-          </td>
-        </tr>
-      </table> -->
-
-        <!-- Целая таблица? или с mobile first начинать???
-        <table class="price__table table">
-          <div class="table__list slider__list">
-            <tr class="table__item">
-              <th class="table__title-row table__title-row--no-visible">&nbsp;</th>
-              <th class="table__title-row">
-                База<br>
-                <span class="table__price">1,99 USD</span>
-              </th>
-              <th class="table__title-row">
-                Стандарт<br>
-                <span class="table__price">3,99 USD</span>
-              </th>
-              <th class="table__title-row">
-                Анлим<br>
-                <span class="table__price">9,99 USD</span>
-              </th>
-            </tr>
-            <tr class="table__item">
-              <th class="table__title-col">Розовый фильтр</th>
-              <td class="table__icon-yes">yes</td>
-              <td class="table__icon-yes">yes</td>
-              <td class="table__icon-yes">yes</td>
-            </tr>
-            <tr>
-              <th class="table__title-col">Смайлики</th>
-              <td class="table__icon-no">no</td>
-              <td class="table__icon-yes">yes</td>
-              <td class="table__icon-yes">yes</td>
-            </tr>
-            <tr>
-              <th class="table__title-col">Комментарии</th>
-              <td class="table__icon-no">no</td>
-              <td class="table__icon-no">no</td>
-              <td class="table__icon-yes">yes</td>
-            </tr>
-          </div>
-        </table>
-        -->
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты!</h2>
@@ -448,21 +345,25 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             <h3 class="contacts__title">Звоните:</h3>
-            <a class="contacts_info" href="tel:78125556666">+7 (812) 555-66-66</a>
+            <a class="contacts__info" href="tel:78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__title">Пишите:</h3>
-            <a class="contacts_info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             <h3 class="contacts__title">Приезжайте в гости:</h3>
-            <p class="contacts_info">ул. Большая<br>
+            <p class="contacts__info">ул. Большая<br>
               Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
-      <div class="contacts__map map">
-        <!--Карта-->
+      <div class="contacts__map-container">
+        <svg class="contacts__bg-triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+          <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
+        </svg>
+        
+        <iframe class="contacts__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.320894617443848!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1652856220566!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
