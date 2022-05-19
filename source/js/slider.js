@@ -512,12 +512,5 @@ document.addEventListener('DOMContentLoaded', () => {
     autoplay: false,
     interval: 5000,
     swipe: true,
-  });
-  // инициализация 2 слайдера с нужными настройками
-  new ItcSimpleSlider('.price__slider', {
-    loop: true,
-    autoplay: false,
-    interval: 5000,
-    swipe: true,
-  });
+  })
 });
