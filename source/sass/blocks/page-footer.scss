@@ -1,0 +1,166 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 960px;
+
+    padding: 0 20px;
+
+    text-align: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    // Footer logo
+    margin-bottom: 35px;
+
+    &--svg {
+      & path {
+        fill: #283645;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &__social {
+  }
+
+  &__copyright {
+  }
+}
+
+.social {
+  &__list {
+    display: grid;
+    grid-template-columns: 48px 48px 48px;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 8px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+
+    list-style: none;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    column-gap: 10px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    background-color: #ffffff;
+
+    border: 3px solid rgba($lightblack, 10%);
+    border-radius: 30px;
+    box-sizing: border-box;
+
+    &:hover {
+      border-color: #000000;
+    }
+
+    &:active {
+      opacity: 10%;
+    }
+  }
+
+  &__icon {
+    fill: $pink;
+
+    & path {
+      fill: $pink;
+    }
+  }
+
+  &__link--twitter {
+    & svg {
+      width: 18px;
+      height: 14px;
+    }
+  }
+
+  &__link--facebook {
+    & svg {
+      width: 9px;
+      height: 18px;
+    }
+  }
+
+  &__link--youtube {
+    & svg {
+      width: 15px;
+      height: 13px;
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+    margin-right: 11px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
+  }
+
+  &__link {
+  }
+
+  &__logo {
+    width: 41px;
+    height: 41px;
+
+    & path {
+      fill: $pink;
+
+      &:hover {
+        fill: #000000;
+      }
+
+      &:active {
+        fill-opacity: 10%;
+      }
+    }
+  }
+}

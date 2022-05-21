@@ -1325,14 +1325,44 @@ img {
   text-align: center;
   padding-top: 45px;
 }
+@media (min-width: 650px) {
+  .contacts {
+    padding-top: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts {
+    padding-top: 66px;
+  }
+}
 .contacts__wrapper {
   padding: 0 20px;
+}
+@media (min-width: 1200px) {
+  .contacts__wrapper {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
 }
 .contacts__communicate {
   margin: 0;
   margin-bottom: 40px;
+  font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+}
+@media (min-width: 650px) {
+  .contacts__communicate {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts__communicate {
+    font-size: 50px;
+    margin-bottom: 51px;
+  }
 }
 .contacts__list {
   margin: 0;
@@ -1342,11 +1372,27 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
 }
+@media (min-width: 650px) {
+  .contacts__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .contacts__item {
   margin-bottom: 25px;
 }
 .contacts__item:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 650px) {
+  .contacts__item {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 650px) {
+  .contacts__item--order {
+    order: 1;
+  }
 }
 .contacts__title {
   font-weight: 700;
@@ -1355,11 +1401,27 @@ img {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+@media (min-width: 650px) {
+  .contacts__title {
+    margin-bottom: 32px;
+  }
+}
 .contacts__info {
+  margin: 0;
   text-decoration: none;
+  font-weight: 300;
   font-size: 24px;
   line-height: 137%;
   color: #d22856;
+}
+.contacts__info:hover,
+.contacts__info :focus {
+  color: #283645;
+  text-decoration: underline;
+}
+.contacts__info:active {
+  color: rgba(40, 54, 69, 0.3);
+  text-decoration: none;
 }
 
 .contacts__map-wrapper {
@@ -1385,5 +1447,133 @@ img {
 .contacts__int {
   width: 100%;
   height: 100%;
+}
+
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  padding: 0 20px;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 650px) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .page-footer__wrapper {
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+.page-footer__logo {
+  margin-bottom: 35px;
+}
+.page-footer__logo--svg path {
+  fill: #283645;
+}
+@media (min-width: 650px) {
+  .page-footer__logo {
+    margin: 0;
+  }
+}
+.social__list {
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  justify-items: center;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  list-style: none;
+}
+@media (min-width: 650px) {
+  .social__list {
+    margin: 0;
+  }
+}
+.social__item {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+.social__link:hover {
+  border-color: #000000;
+}
+.social__link:active {
+  opacity: 10%;
+}
+.social__icon {
+  fill: #d22856;
+}
+.social__icon path {
+  fill: #d22856;
+}
+.social__link--twitter svg {
+  width: 18px;
+  height: 14px;
+}
+.social__link--facebook svg {
+  width: 9px;
+  height: 18px;
+}
+.social__link--youtube svg {
+  width: 15px;
+  height: 13px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 11px;
+}
+@media (min-width: 1200px) {
+  .copyright__text {
+    font-size: 18px;
+  }
+}
+.copyright__logo {
+  width: 41px;
+  height: 41px;
+}
+.copyright__logo path {
+  fill: #d22856;
+}
+.copyright__logo path:hover {
+  fill: #000000;
+}
+.copyright__logo path:active {
+  fill-opacity: 10%;
 }
 /*# sourceMappingURL=styles.css.map */
