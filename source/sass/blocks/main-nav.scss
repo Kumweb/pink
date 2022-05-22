@@ -2,7 +2,7 @@
   position: relative;
   min-height: 63px;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 74%;
   }
 }
@@ -12,7 +12,7 @@
   padding: 0;
   list-style: none;
 
-  @media (min-width:$desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -24,8 +24,8 @@
   color: #ffffff;
 }
 
-@media (max-width:$desktop-width) {
+@media (max-width: calc($desktop-width - 1px)) {
   .main-nav--closed {
     display: none;
-  }  
+  }
 }
