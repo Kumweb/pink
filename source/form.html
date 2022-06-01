@@ -207,7 +207,7 @@
                       </div>
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-6" name="bash" />
-                        <label class="form__achiev-title" for="achiev-6">Обгорел на пляже</label>
+                        <label class="form__achiev-title" for="achiev-6">Разгромил отель</label>
                       </div>
                     </li>
                   </ul>
@@ -215,11 +215,20 @@
               </div>
               <div class="form__emotions-box form__container">
                 <fieldset class="form__emotions form__group">
-                  <legend class="form__title form__title--center">Опишите свои эмоции</legend>
-                  <textarea class="form_emotions-text input" name="emotions" id="emotion" readonly></textarea>
+                  <legend class="form__title form__title--center form__emotions-title">Опишите свои эмоции</legend>
+                  <textarea
+                    class="form__emotions-text input"
+                    name="emotions"
+                    id="emotion"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"
+                  ></textarea>
                 </fieldset>
               </div>
             </div>
+            <div class="form__button-box form__container">
+              <button class="form__button button" type="submit">Отправить форму</button>
+            </div>
+            <p class="form__legend form__container"><sup>*</sup> — обязательные поля</p>
           </form>
         </div>
       </section>

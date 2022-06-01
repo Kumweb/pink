@@ -1884,4 +1884,48 @@ img {
   padding-left: 60px;
   line-height: 30px;
 }
+.form__emotions-box {
+  padding-top: 40px;
+}
+.form__emotions-title {
+  margin-bottom: 20px;
+}
+.form__emotions-text {
+  width: 276px;
+  height: 197px;
+  resize: none;
+}
+.form__emotions-text::-moz-placeholder {
+  line-height: 30px;
+}
+.form__emotions-text::placeholder {
+  line-height: 30px;
+}
+.form__button-box {
+  padding-top: 50px;
+  text-align: center;
+}
+.form__button {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 17px 43px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 4px solid transparent;
+  border-radius: 4px;
+}
+.form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 38px;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.form__legend sup {
+  color: #d22856;
+}
 /*# sourceMappingURL=styles.css.map */

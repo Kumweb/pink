@@ -313,15 +313,60 @@
   }
 
   &__emotions-box {
+    padding-top: 40px;
   }
 
   &__emotions {
   }
 
   &__emotions-title {
+    margin-bottom: 20px;
   }
-}
-.visually-hidden {
-}
-.achiev-checkbox {
+
+  &__emotions-text {
+    width: 276px;
+    height: 197px;
+    resize: none;
+
+    &::placeholder {
+      line-height: 30px;
+    }
+  }
+
+  &__button-box {
+    padding-top: 50px;
+
+    text-align: center;
+  }
+
+  &__button {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    padding: 17px 43px;
+
+    color: #ffffff;
+
+    background-color: #2aab6d;
+    border: 4px solid transparent;
+    border-radius: 4px;
+  }
+
+  &__legend {
+    font-size: 14px;
+    line-height: 30px;
+
+    padding-top: 38px;
+    margin: 0;
+    margin-bottom: 25px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    & sup {
+      color: $pink;
+    }
+  }
 }
