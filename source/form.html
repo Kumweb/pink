@@ -96,12 +96,12 @@
                   <ul class="form__name-list form__list">
                     <li class="form__name-item">
                       <label class="form__title form__title-name" for="name1">Фамилия:</label>
-                      <input class="form__name input" id="name1" type="text" name="surname" placeholder="Укажите фамилию*" />
+                      <input class="form__name input" id="name1" type="text" name="surname" placeholder="Укажите фамилию *" />
                     </li>
 
                     <li class="form__name-item">
                       <label class="form__title form__title-name" for="name2">Имя:</label>
-                      <input class="form__name input" id="name2" type="text" name="name" placeholder="Введите ваше имя*" />
+                      <input class="form__name input" id="name2" type="text" name="name" placeholder="Введите ваше имя *" />
                     </li>
 
                     <li class="form__name-item">
@@ -113,7 +113,9 @@
               </div>
               <div class="form__platforms-box form__container">
                 <fieldset class="form__platforms form__group">
-                  <legend class="form__title form__title--center">С каким приложением путешествовали?</legend>
+                  <legend class="form__title form__title--center form__platforms-title">
+                    С каким приложением путешествовали?
+                  </legend>
                   <ul class="form__platforms-list form__list">
                     <li class="form__platforms-item">
                       <input
@@ -178,7 +180,10 @@
               </div>
               <div class="form__achiev-box form__container">
                 <fieldset class="form__achiev form__group">
-                  <legend class="form__title form__title--center">Ваши безбашенные достижения в путешествии</legend>
+                  <legend class="form__title form__title--center">
+                    Ваши безбашенные<br />
+                    достижения в путешествии
+                  </legend>
                   <ul class="form__achiev-list form__list">
                     <li class="form__achiev-item">
                       <div class="form__achiev-holder">
@@ -225,10 +230,12 @@
                 </fieldset>
               </div>
             </div>
-            <div class="form__button-box form__container">
-              <button class="form__button button" type="submit">Отправить форму</button>
+            <div class="form__legend-wrapper">
+              <div class="form__button-box">
+                <button class="form__button button" type="submit">Отправить форму</button>
+              </div>
+              <p class="form__legend form__container"><sup>*</sup> — обязательные поля</p>
             </div>
-            <p class="form__legend form__container"><sup>*</sup> — обязательные поля</p>
           </form>
         </div>
       </section>

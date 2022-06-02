@@ -1,6 +1,8 @@
 //GLOBAL
 
 .input {
+  position: relative;
+
   box-sizing: border-box;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -108,6 +110,9 @@
 
 .form {
   &__wrapper {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+
     @media (min-width: $desktop-width) {
       max-width: 960px;
       padding: 0 10px;
@@ -119,6 +124,14 @@
     @media (max-width: calc($desktop-width - 1px)) {
       padding: 0 20px;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   // form__group
@@ -127,6 +140,10 @@
     margin: 0;
     padding: 0;
     border: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 62px;
+    }
   }
 
   // form__list
@@ -168,33 +185,78 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 27px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+
+      margin-bottom: 55px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__title-name {
     padding-left: 21px;
     margin-bottom: 7px;
+
+    @media (min-width: $tablet-width) {
+      align-self: center;
+
+      margin-bottom: 0;
+      margin-right: 20px;
+      padding-left: 0;
+    }
   }
 
   &__name {
   }
 
   &__platforms-box {
-    padding-top: 40px;
+    @media (max-width: $mobile-width-only) {
+      padding-top: 40px;
 
-    background-color: #f2f2f2;
-    background-size: 100%;
+      background-color: #f2f2f2;
+      background-size: 100%;
+    }
   }
 
   &__platforms {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 20px;
+
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+    }
+  }
+
+  &__platforms-title {
+    padding: 0 25px;
   }
 
   &__platforms-list {
     padding-top: 35px;
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 55px;
+      margin-bottom: 55px;
+    }
   }
 
   &__platforms-item {
     margin-bottom: 28px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 38px;
+    }
   }
 
   &__platforms-radio {
@@ -229,42 +291,105 @@
     position: relative;
     line-height: 30px;
     padding-left: 70px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 60px;
+    }
   }
 
+  // Form Contacts
+
   &__contacts-box {
-    padding-top: 40px;
     margin-bottom: 44px;
+
+    @media (max-width: $mobile-width-only) {
+      grid-row: 3 / 4;
+
+      padding-top: 40px;
+    }
   }
 
   &__contacts {
+    @media (min-width: $tablet-width) {
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+
+      & legend {
+        padding: 0 31px;
+      }
+    }
   }
 
   &__contacts-list {
+    @media (min-width: $tablet-width) {
+      padding-top: 35px;
+    }
   }
 
   &__contatcts-item {
     display: flex;
     flex-direction: column;
     margin-bottom: 27px;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: column-reverse;
+
+      margin-bottom: 34px;
+    }
   }
 
   &__contacts-title {
     padding-left: 21px;
     margin-bottom: 7px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-top: 15px;
+    }
   }
 
   &__contacts-number {
+    background-image: url("../img/bg-input-contacts.png");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    padding-right: 60px;
   }
 
   &__contacts-email {
+    background-image: url("../img/bg-input-contacts-mail.svg");
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    padding-right: 60px;
   }
 
+  // Form Achiev
+
   &__achiev-box {
-    background-color: #f2f2f2;
-    padding-top: 40px;
+    @media (max-width: $mobile-width-only) {
+      grid-row: 2 / 3;
+
+      padding-top: 40px;
+
+      background-color: #f2f2f2;
+    }
   }
 
   &__achiev {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+
+      & legend {
+        padding: 0 31px;
+
+        & br {
+          display: none;
+        }
+      }
+    }
   }
 
   &__achiev-list {
@@ -275,7 +400,7 @@
   }
 
   &__achiev-holder {
-    margin-bottom: 44px;
+    margin-bottom: 45px;
   }
 
   &__achiev-checkbox {
@@ -313,18 +438,31 @@
   }
 
   &__emotions-box {
-    padding-top: 40px;
+    @media (max-width: $mobile-width-only) {
+      padding-top: 40px;
+    }
   }
 
   &__emotions {
+    padding-top: 22px;
+
+    @media (min-width: $tablet-width) {
+      border: 2px solid #e5e5e5;
+      border-radius: 2px;
+
+      padding-top: 42px;
+      padding-bottom: 53px;
+    }
   }
 
   &__emotions-title {
-    margin-bottom: 20px;
+    @media (min-width: $tablet-width) {
+      padding: 0 38px;
+    }
   }
 
   &__emotions-text {
-    width: 276px;
+    min-width: 276px;
     height: 197px;
     resize: none;
 
@@ -333,9 +471,18 @@
     }
   }
 
-  &__button-box {
-    padding-top: 50px;
+  &__legend-wrapper {
+    padding: 50px 20px 0 20px;
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
 
+      padding-top: 70px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button-box {
     text-align: center;
   }
 
@@ -352,6 +499,10 @@
     background-color: #2aab6d;
     border: 4px solid transparent;
     border-radius: 4px;
+
+    @media (min-width: $tablet-width) {
+      padding: 17px 55px;
+    }
   }
 
   &__legend {
@@ -367,6 +518,12 @@
 
     & sup {
       color: $pink;
+    }
+
+    @media (min-width: $tablet-width) {
+      align-self: center;
+      padding: 0;
+      margin: 0;
     }
   }
 }
