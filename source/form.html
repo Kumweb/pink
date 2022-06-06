@@ -119,6 +119,7 @@
                   <ul class="form__platforms-list form__list">
                     <li class="form__platforms-item">
                       <input
+                        tabindex="0"
                         type="radio"
                         class="form__platforms-radio visually-hidden"
                         id="ios"
@@ -126,7 +127,7 @@
                         name="platforms"
                         checked
                       />
-                      <label class="form__platforms-name" for="ios">Pink для iOS</label>
+                      <label class="form__platforms-name" tabindex="0" for="ios">Pink для iOS</label>
                     </li>
                     <li class="form__platforms-item">
                       <input
@@ -136,7 +137,7 @@
                         value="android"
                         name="platforms"
                       />
-                      <label class="form__platforms-name" for="android">Pink на Android</label>
+                      <label class="form__platforms-name" tabindex="0" for="android">Pink на Android</label>
                     </li>
                     <li class="form__platforms-item">
                       <input
@@ -146,7 +147,7 @@
                         value="windows"
                         name="platforms"
                       />
-                      <label class="form__platforms-name" for="windows">Windows Phone</label>
+                      <label class="form__platforms-name" tabindex="0" for="windows">Windows Phone</label>
                     </li>
                   </ul>
                 </fieldset>
@@ -188,31 +189,31 @@
                     <li class="form__achiev-item">
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-1" name="selfi" checked />
-                        <label class="form__achiev-title" for="achiev-1">Сделал селфи с окулой</label>
+                        <label class="form__achiev-title" for="achiev-1" tabindex="0">Сделал селфи с окулой</label>
                       </div>
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-2" name="beach" checked />
-                        <label class="form__achiev-title" for="achiev-2">Обгорел на пляже</label>
+                        <label class="form__achiev-title" for="achiev-2" tabindex="0">Обгорел на пляже</label>
                       </div>
                     </li>
                     <li class="form__achiev-item">
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-3" name="see" />
-                        <label class="form__achiev-title" for="achiev-3">Видел Чака Норриса</label>
+                        <label class="form__achiev-title" for="achiev-3" tabindex="0">Видел Чака Норриса</label>
                       </div>
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-4" name="souvenir" />
-                        <label class="form__achiev-title" for="achiev-4">Накупил сувениров</label>
+                        <label class="form__achiev-title" for="achiev-4" tabindex="0">Накупил сувениров</label>
                       </div>
                     </li>
                     <li class="form__achiev-item">
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-5" name="tower" checked />
-                        <label class="form__achiev-title" for="achiev-5">Удержал башню</label>
+                        <label class="form__achiev-title" for="achiev-5" tabindex="0">Удержал башню</label>
                       </div>
                       <div class="form__achiev-holder">
                         <input class="form__achiev-checkbox visually-hidden" type="checkbox" id="achiev-6" name="bash" />
-                        <label class="form__achiev-title" for="achiev-6">Разгромил отель</label>
+                        <label class="form__achiev-title" for="achiev-6" tabindex="0">Разгромил отель</label>
                       </div>
                     </li>
                   </ul>
@@ -239,6 +240,27 @@
               </p>
             </div>
           </form>
+        </div>
+      </section>
+      <section class="popup">
+        <div class="popup__valid popup__succes popup__succes--hidden">
+          <div class="popup__valid-box">
+            <h3 class="popup__title">Ваша заявка отправлена</h3>
+            <p class="popup__text">
+              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br />
+              оповестим вас.
+            </p>
+          </div>
+          <p class="popup__button-box">
+            <button class="popup__button popup__button-succes form__button" type="button">Закрыть окно</button>
+          </p>
+        </div>
+        <div class="popup__valid popup__failed popup__failed--hidden">
+          <div class="popup__valid-box">
+            <h3 class="popup__title">Что-то пошло не так!</h3>
+            <p class="popup__text popup__failed-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="popup__button popup__button-failed form__button" type="button">Ок</button>
+          </div>
         </div>
       </section>
     </main>
