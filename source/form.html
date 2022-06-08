@@ -67,8 +67,8 @@
           </nav>
         </div>
       </div>
-      <div class="inner-contest">
-        <h1 class="inner-contest__title">
+      <div class="inner-title contest__title">
+        <h1 class="inner-title__text contest__text">
           Конкурс на самое<br />
           безбашенное<br />
           путешествие с Пинк
@@ -96,17 +96,35 @@
                   <ul class="form__name-list form__list">
                     <li class="form__name-item">
                       <label class="form__title form__title-name" for="name1">Фамилия:</label>
-                      <input class="form__name input" id="name1" type="text" name="surname" placeholder="Укажите фамилию *" />
+                      <input
+                        class="form__name form__name-1 input js-input"
+                        id="name1"
+                        type="text"
+                        name="surname"
+                        placeholder="Укажите фамилию *"
+                      />
                     </li>
 
                     <li class="form__name-item">
                       <label class="form__title form__title-name" for="name2">Имя:</label>
-                      <input class="form__name input" id="name2" type="text" name="name" placeholder="Введите ваше имя *" />
+                      <input
+                        class="form__name form__name-2 input js-input"
+                        id="name2"
+                        type="text"
+                        name="name"
+                        placeholder="Введите ваше имя *"
+                      />
                     </li>
 
                     <li class="form__name-item">
                       <label class="form__title form__title-name" for="name3">Отчество:</label>
-                      <input class="form__name input" id="name3" type="text" name="patronymic" placeholder="Ну и отчество тоже" />
+                      <input
+                        class="form__name form__name-3 input"
+                        id="name3"
+                        type="text"
+                        name="patronymic"
+                        placeholder="Ну и отчество тоже"
+                      />
                     </li>
                   </ul>
                 </fieldset>
@@ -159,17 +177,17 @@
                     <li class="form__contatcts-item">
                       <label class="form__title form__contacts-title" for="numb">Номер телефона</label>
                       <input
-                        class="form__contacts-number input"
-                        type="number"
+                        class="form__contacts-number input js-input"
+                        type="tel"
                         id="numb"
                         name="number-phone"
-                        placeholder="Номер, пожалуйста"
+                        placeholder="Номер, пожалуйста*"
                       />
                     </li>
                     <li class="form__contatcts-item">
                       <label class="form__title form__contacts-title" for="mail">Адрес почты</label>
                       <input
-                        class="form__contacts-email input"
+                        class="form__contacts-email input js-input"
                         type="email"
                         id="mail"
                         name="email"
@@ -243,7 +261,7 @@
         </div>
       </section>
       <section class="popup">
-        <div class="popup__valid popup__succes popup__succes--hidden">
+        <div class="popup__valid popup__succes">
           <div class="popup__valid-box">
             <h3 class="popup__title">Ваша заявка отправлена</h3>
             <p class="popup__text popup__succes-text">
@@ -255,7 +273,7 @@
             <button class="popup__button popup__button-succes form__button" type="button">Закрыть окно</button>
           </p>
         </div>
-        <div class="popup__valid popup__failed popup__failed--hidden">
+        <div class="popup__valid popup__failed">
           <div class="popup__valid-box">
             <h3 class="popup__title">
               Что-то пошло<br />
@@ -404,5 +422,6 @@
       </div>
     </footer>
     <script src="js/main-nav.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
