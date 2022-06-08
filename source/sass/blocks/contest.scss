@@ -117,6 +117,10 @@
 }
 
 .form {
+  &__error {
+    border-color: red;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-rows: repeat(5, auto);
@@ -297,7 +301,7 @@
   &__platforms-radio {
     & + label::before {
       position: absolute;
-      content: "";
+      content: '';
       box-sizing: border-box;
       width: 37px;
       height: 37px;
@@ -310,7 +314,7 @@
 
     &:checked + label::after {
       position: absolute;
-      content: "";
+      content: '';
       box-sizing: border-box;
       width: 15px;
       height: 15px;
@@ -413,14 +417,14 @@
   }
 
   &__contacts-number {
-    background-image: url("../img/bg-input-contacts.png");
+    background-image: url('../img/bg-input-contacts.png');
     background-position: 100% center;
     background-repeat: no-repeat;
     padding-right: 60px;
   }
 
   &__contacts-email {
-    background-image: url("../img/bg-input-contacts-mail.svg");
+    background-image: url('../img/bg-input-contacts-mail.svg');
     background-position: 100% center;
     background-repeat: no-repeat;
     padding-right: 60px;
@@ -484,7 +488,7 @@
     & + label::before {
       position: absolute;
       box-sizing: border-box;
-      content: "";
+      content: '';
       width: 35px;
       height: 35px;
       left: 0;
