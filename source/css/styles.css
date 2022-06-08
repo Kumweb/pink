@@ -239,7 +239,7 @@ img {
   display: none;
 }
 
-.inner-contest {
+.inner-title {
   overflow: hidden;
   min-width: 320px;
   box-sizing: border-box;
@@ -248,19 +248,19 @@ img {
   text-align: center;
 }
 @media (min-width: 650px) {
-  .inner-contest {
+  .inner-title {
     padding-top: 70px;
   }
 }
 @media (min-width: 1200px) {
-  .inner-contest {
+  .inner-title {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
     padding-top: 65px;
   }
 }
-.inner-contest__title {
+.inner-title__text {
   margin: 0;
   margin-bottom: 45px;
   font-size: 24px;
@@ -269,19 +269,23 @@ img {
   color: #ffffff;
 }
 @media (min-width: 650px) {
-  .inner-contest__title {
+  .inner-title__text {
     font-size: 50px;
     line-height: 68px;
     margin-bottom: 65px;
   }
 }
 @media (min-width: 1200px) {
-  .inner-contest__title {
+  .inner-title__text {
     margin-bottom: 95px;
   }
-  .inner-contest__title br {
+  .inner-title__text br {
     display: none;
   }
+}
+
+.photo-title__text br {
+  display: inline;
 }
 
 .main-nav {
@@ -1754,6 +1758,9 @@ img {
   }
 }
 
+.form__error {
+  border-color: red;
+}
 .form__wrapper {
   display: grid;
   grid-template-rows: repeat(5, auto);
@@ -2257,6 +2264,7 @@ img {
 }
 .popup__succes--hidden {
   display: block;
+  transition: all 0.5s ease 0s;
 }
 @media (min-width: 650px) {
   .popup__succes {
@@ -2342,6 +2350,8 @@ img {
 }
 .popup__failed--hidden {
   display: block;
+  -webkit-animation: bounce 0.3s ease-in-out forwards;
+          animation: bounce 0.3s ease-in-out forwards;
 }
 @media (min-width: 650px) {
   .popup__failed {
@@ -2386,6 +2396,28 @@ img {
 @media (min-width: 1200px) {
   .popup__button-box--failed {
     background-color: #f2f2f2;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=styles.css.map */
