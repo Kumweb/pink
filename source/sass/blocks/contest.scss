@@ -39,6 +39,15 @@
   border: none;
 }
 
+.subtitle {
+  margin: 0;
+  margin-bottom: 45px;
+
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+}
+
 //
 
 @keyframes tick {
@@ -84,13 +93,6 @@
   // .contest__subtitle
 
   &__subtitle {
-    margin: 0;
-    margin-bottom: 45px;
-
-    text-align: center;
-    font-size: 14px;
-    line-height: 30px;
-
     &--form {
       @media (max-width: $mobile-width-only) {
         display: none;

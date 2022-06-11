@@ -1,37 +1,39 @@
 @charset 'utf-8';
 
-@import "global/variables";
+@import 'global/variables';
 
-@import "global/fonts";
+@import 'global/fonts';
 
-@import "global/global";
+@import 'global/global';
 
-@import "blocks/page";
+@import 'blocks/page';
 
-@import "blocks/page-header";
+@import 'blocks/page-header';
 
-@import "blocks/main-nav";
+@import 'blocks/main-nav';
 
-@import "blocks/site-list";
+@import 'blocks/site-list';
 
-@import "blocks/download";
+@import 'blocks/download';
 
-@import "blocks/platform-list";
+@import 'blocks/platform-list';
 
-@import "blocks/advantages";
+@import 'blocks/advantages';
 
-@import "blocks/preview";
+@import 'blocks/preview';
 
-@import "blocks/reviews";
+@import 'blocks/reviews';
 
-@import "blocks/slider";
+@import 'blocks/slider';
 
-@import "blocks/price";
+@import 'blocks/price';
 
-@import "blocks/contacts";
+@import 'blocks/contacts';
 
-@import "blocks/page-footer";
+@import 'blocks/page-footer';
 
-@import "blocks/contest";
+@import 'blocks/contest';
 
-@import "blocks/popup";
+@import 'blocks/popup';
+
+@import 'blocks/photo';
