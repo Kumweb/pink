@@ -51,15 +51,21 @@
   &__best-img {
     display: block;
 
+    object-fit: cover;
+
     width: 100%;
     height: 140px;
+
+    @media (min-width: $tablet-width) {
+      height: 510px;
+    }
   }
 
   // .photo__item-best
 
   &__item-best {
     // Доделать абсолютное position
-    &::before {
+    &::after {
       display: inline-block;
       position: absolute;
       content: 'Панорама дня';
@@ -68,9 +74,16 @@
       font-size: 12px;
       line-height: 24px;
       font-weight: 700;
-      padding: 14px 20px;
+      padding: 8px 20px;
       top: 0;
+      right: 20px;
       background-color: $pink;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        top: 60px;
+      }
     }
   }
 
@@ -80,6 +93,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   // .photo__item
@@ -90,11 +108,33 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    @media (min-width: $tablet-width) {
+      flex: 1 1 300px;
+
+      margin-right: 20px;
+    }
+
+    @media (max-width: 979px) {
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: 980px) {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
   }
 
   // .photo__comment
 
   &__comment {
+    position: relative;
+
+    box-sizing: border-box;
+
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -103,6 +143,30 @@
     margin: 0;
 
     background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+      min-height: 155px;
+
+      padding: 25px 34px;
+    }
+  }
+
+  // .photo__comment--best
+
+  &__comment--best {
+    @media (min-width: $tablet-width) {
+      min-height: 120px;
+
+      & .photo__like {
+        top: 24px;
+        right: 25px;
+        width: 21.5%;
+      }
+
+      & .photo__author-quote {
+        margin-bottom: 0;
+      }
+    }
   }
 
   // .photo__img
@@ -114,6 +178,10 @@
 
     width: 100%;
     height: 180px;
+
+    @media (min-width: $tablet-width) {
+      height: 300px;
+    }
   }
 
   // .photo__authot-name
@@ -134,7 +202,7 @@
 
   &__author-quote {
     margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 17px;
 
     @media (min-width: 360px) {
       & br {
@@ -157,6 +225,50 @@
       height: 12px;
       margin-right: 18px;
       vertical-align: middle;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      position: absolute;
+
+      bottom: 24px;
+
+      width: 80%;
+
+      &::before {
+        margin: 0;
+      }
+    }
+  }
+
+  // .photo__footer
+
+  &__footer {
+  }
+
+  // .photo__footer-box
+
+  &__footer-box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  // .photo__footer-slogan
+
+  &__footer-slogan {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+    margin: 0;
+
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
     }
   }
 }
