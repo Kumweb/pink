@@ -2621,6 +2621,12 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+@media (min-width: 650px) {
+  .photo__footer-box {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+  }
+}
 .photo__footer-slogan {
   font-size: 14px;
   font-weight: 400;
@@ -2637,8 +2643,14 @@ img {
 .filter__wrapper {
   background-color: #f2f2f2;
 }
+@media (min-width: 1200px) {
+  .filter__wrapper {
+    background-color: inherit;
+  }
+}
 .filter__box {
   position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2660,7 +2672,16 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 55px 0;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__box {
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 80px;
+    background-color: #f2f2f2;
   }
 }
 .filter__img-box {
@@ -2670,6 +2691,11 @@ img {
   .filter__img-box {
     margin-right: 50px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__img-box {
+    margin-right: 0;
   }
 }
 .filter__img {
@@ -2692,6 +2718,11 @@ img {
 }
 .filter__settings-box {
   margin-bottom: 67px;
+}
+@media (min-width: 650px) {
+  .filter__settings-box {
+    margin-bottom: 142px;
+  }
 }
 @media (min-width: 650px) {
   .filter__settings-box--mobile {
@@ -2750,9 +2781,44 @@ img {
     padding-left: 4px;
   }
 }
+@media (min-width: 650px) and (min-width: 1200px) {
+  .filter__settings-item .filter__svg-dia {
+    padding-left: 6px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__settings-item {
+    padding: 16px 30px 16px 0;
+  }
+  .filter__settings-item:last-child {
+    border-bottom: none;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__settings-item {
+    min-width: 410px;
+  }
+  .filter__settings-item .filter__svg-crop {
+    width: 44px;
+    height: 44px;
+  }
+  .filter__settings-item .filter__svg-fill {
+    width: 48px;
+    height: 43px;
+  }
+  .filter__settings-item .filter__svg-dia {
+    width: 32px;
+    height: 32px;
+  }
+}
 @media (min-width: 650px) {
   .filter__settings-crop {
     padding-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__settings-crop {
+    padding-top: 0;
   }
 }
 .filter__settings-radio + label svg path,
@@ -2794,6 +2860,11 @@ img {
     margin: 0;
   }
 }
+@media (min-width: 1200px) {
+  .filter__controls {
+    width: 288px;
+  }
+}
 .filter__scale {
   height: 2px;
   background-color: #283645;
@@ -2823,9 +2894,20 @@ img {
     margin-bottom: 0;
   }
 }
+@media (min-width: 1200px) {
+  .filter__box-btn {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .filter__btn {
   max-width: 280px;
   width: 100%;
+}
+@media (min-width: 650px) {
+  .filter__btn {
+    max-width: 183px;
+  }
 }
 .filter__btn {
   font-weight: 700;
@@ -2851,6 +2933,11 @@ img {
 @media (min-width: 650px) {
   .filter__btn--sub {
     margin-bottom: 23px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter__btn--sub {
+    margin-bottom: 0;
   }
 }
 .filter__btn--res:disabled {
