@@ -15,12 +15,18 @@
 
   &__wrapper {
     background-color: #f2f2f2;
+
+    @media (min-width: $desktop-width) {
+      background-color: inherit;
+    }
   }
 
   // .filter__box
 
   &__box {
     position: relative;
+
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
@@ -48,7 +54,17 @@
       justify-content: center;
       align-items: flex-start;
 
-      padding: 55px 0;
+      padding-top: 55px;
+      padding-bottom: 55px;
+    }
+
+    @media (min-width: $desktop-width) {
+      justify-content: space-between;
+
+      padding-right: 60px;
+      padding-left: 80px;
+
+      background-color: #f2f2f2;
     }
   }
 
@@ -60,6 +76,10 @@
     @media (min-width: $tablet-width) {
       margin-right: 50px;
       margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
     }
   }
 
@@ -91,6 +111,10 @@
 
   &__settings-box {
     margin-bottom: 67px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 142px;
+    }
   }
 
   // .filter__settings-box--mobile
@@ -172,6 +196,37 @@
 
       & .filter__svg-dia {
         padding-left: 4px;
+
+        @media (min-width: $desktop-width) {
+          padding-left: 6px;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 30px 16px 0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 410px;
+
+      & .filter__svg-crop {
+        width: 44px;
+        height: 44px;
+      }
+
+      & .filter__svg-fill {
+        width: 48px;
+        height: 43px;
+      }
+
+      & .filter__svg-dia {
+        width: 32px;
+        height: 32px;
       }
     }
   }
@@ -181,6 +236,10 @@
   &__settings-crop {
     @media (min-width: $tablet-width) {
       padding-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
     }
   }
 
@@ -258,6 +317,10 @@
       width: 204px;
       margin: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 288px;
+    }
   }
 
   // .filter__scale
@@ -302,6 +365,11 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   // .filter__btn
@@ -309,6 +377,10 @@
   &__btn {
     max-width: 280px;
     width: 100%;
+
+    @media (min-width: $tablet-width) {
+      max-width: 183px;
+    }
   }
 
   // .filter__btn
@@ -345,6 +417,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
     }
   }
 

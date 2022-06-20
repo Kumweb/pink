@@ -294,6 +294,11 @@
   &__footer-box {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+      margin-bottom: 70px;
+    }
   }
 
   // .photo__footer-slogan
