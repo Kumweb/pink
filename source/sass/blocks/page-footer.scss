@@ -33,14 +33,46 @@
     // Footer logo
     margin-bottom: 35px;
 
-    &--svg {
-      & path {
-        fill: #283645;
+    &-svg {
+      &:hover {
+        & path {
+          fill: $pink;
+        }
+      }
+
+      &:active {
+        & path {
+          opacity: 30%;
+        }
       }
     }
 
     @media (min-width: $tablet-width) {
       margin: 0;
+    }
+  }
+
+  &__logo-svg {
+    &--tablet {
+      width: 145px;
+      height: 40px;
+      fill: #ffffff;
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      width: 147px;
+      height: 40px;
+      fill: #ffffff;
+
+      @media (min-width: $desktop-width) {
+        display: inline;
+      }
     }
   }
 

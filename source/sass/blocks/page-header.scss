@@ -3,26 +3,43 @@
 
   @media (max-width: $mobile-width-only) {
     background-color: #1d2631;
-    background-image: url('../img/bg-back-mobile@2x.jpg');
+    background-image: url('../img/bg-back-mobile@1x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/bg-back-mobile@2x.jpg');
+      background-position: center 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
     background-color: #1d2631;
-    background-image: url('../img/bg-back-tablet@2x.jpg');
+    background-image: url('../img/bg-back-tablet@1x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/bg-back-tablet@2x.jpg');
+      background-size: 1200px auto;
+      background-position: center 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-color: #1d2631;
-    background-image: url('../img/bg-back-desktop@2x.jpg');
+    background-image: url('../img/bg-back-desktop@1x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/bg-back-desktop@2x.jpg');
+      background-size: 2560px auto;
+      background-position: center 0;
+    }
   }
 }
 
@@ -46,18 +63,47 @@
 
 .page-header__logo {
   @media (min-width: $desktop-width) {
-    padding-top: 27px;
   }
 }
 
-.page-header__logo .page-header__logo--svg {
+.page-header__logo .page-header__logo-svg--mobile {
   width: 74px;
   height: 23px;
   fill: #ffffff;
+
+  @media (min-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.page-header__logo .page-header__logo-svg--tablet {
+  width: 145px;
+  height: 40px;
+  fill: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo .page-header__logo-svg--desktop {
+  display: none;
+
+  width: 147px;
+  height: 40px;
+  fill: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .page-header__logo {
-  &:hover .page-header__logo--svg {
+  &:hover .page-header__logo-svg {
     opacity: 1;
 
     path {
@@ -65,7 +111,7 @@
     }
   }
 
-  &:active .page-header__logo--svg {
+  &:active .page-header__logo-svg {
     opacity: 0.3;
 
     path: {
@@ -81,10 +127,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 43px 20px;
+    padding-top: 23px;
+
+    align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    align-self: center;
   }
 }
 
