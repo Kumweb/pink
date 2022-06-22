@@ -52,11 +52,15 @@
   &::after {
     content: '';
     display: block;
-    background-image: url('../img/iphone-screen-mobile@2x.png');
+    background-image: url('../img/iphone-screen-mobile@1x.png');
     background-size: cover;
     width: 157px;
     height: 277px;
     align-self: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../img/iphone-screen-mobile@2x.png');
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -64,11 +68,15 @@
     justify-content: center;
 
     &::after {
-      background-image: url('../img/iphone-screen-3-tablet@2x.png');
+      background-image: url('../img/iphone-screen-3-tablet@1x.png');
       width: 268px;
       height: 482px;
       align-self: flex-end;
       margin-right: 42px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url('../img/iphone-screen-3-tablet@2x.png');
+      }
     }
   }
 
