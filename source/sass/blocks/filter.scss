@@ -192,6 +192,7 @@
 
       & svg {
         margin-right: 30px;
+        fill: $pink;
       }
 
       & .filter__svg-dia {
@@ -248,29 +249,20 @@
   &__settings-radio {
     & + label {
       & svg {
-        & path,
-        rect {
-          fill: rgba(40, 54, 69, 0.3);
-        }
+        fill: rgba(40, 54, 69, 0.3);
       }
     }
 
     & + label:hover,
     label:focus {
       & svg {
-        & path,
-        rect {
-          fill: rgba(40, 54, 69, 0.5);
-        }
+        fill: rgba(40, 54, 69, 0.5);
       }
     }
 
     &:checked + label {
       & svg {
-        & path,
-        rect {
-          fill: $pink;
-        }
+        fill: $pink;
       }
     }
   }

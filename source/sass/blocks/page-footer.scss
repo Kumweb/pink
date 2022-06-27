@@ -53,9 +53,16 @@
   }
 
   &__logo-svg {
-    &--tablet {
-      width: 145px;
+    display: block;
+    width: 145px;
+    height: 40px;
+
+    @media (min-width: $tablet-width) {
+      width: 147px;
       height: 40px;
+    }
+
+    &--tablet {
       fill: #ffffff;
 
       @media (min-width: $desktop-width) {
@@ -66,12 +73,10 @@
     &--desktop {
       display: none;
 
-      width: 147px;
-      height: 40px;
       fill: #ffffff;
 
       @media (min-width: $desktop-width) {
-        display: inline;
+        display: block;
       }
     }
   }
