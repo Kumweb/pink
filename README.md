@@ -15,5 +15,3 @@
 `npm run build` - финальная сборка проекта.
 
 ---
-
-## permalink: /index.html
