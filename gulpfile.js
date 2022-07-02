@@ -24,6 +24,9 @@ const imagemin = require('gulp-imagemin');
 // WebP
 const webp = require('gulp-webp');
 
+// Clean
+const del = require('del');
+
 // Styles
 
 const styles = () => {
@@ -36,7 +39,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('.'))
-    .pipe(gulp.dest('source/css'))
+    .pipe(gulp.dest('dist/css'))
     .pipe(sync.stream());
 };
 
@@ -86,4 +89,27 @@ const webpi = () => {
 
 exports.webpi = webpi;
 
+// Copy
+
+const copy = () => {
+  return gulp
+    .src(['source/fonts/**/*.{woff, woff2}', 'source/img/**', 'source/js/**', 'source/*.ico', 'source/*.html'], {
+      base: 'source',
+    })
+    .pipe(gulp.dest('dist'));
+};
+
+exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+  return del('dist');
+};
+
+exports.clean = clean;
+
+const build = gulp.series(clean, copy, styles);
+
+exports.build = build;
 exports.default = gulp.series(styles, watcher);
