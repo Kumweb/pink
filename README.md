@@ -2,7 +2,7 @@
 
 Вёрстка: [KumWeb](https://github.com/Kumweb)
 
-[Демо проекта](https://Kumweb.github.io/pink/)
+[Демо проекта](https://Kumweb.github.io/pink/source)
 
 ---
 
